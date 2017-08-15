@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {font-size: 1.6em;}
+		.hidden {display:none:}
+		.show {display:inline !important}
+		button {
+			border: 2px solid black; background: #E5E4E2;
+			font-size: .5em; font-weight: bold; color: black;
+			padding: .8em 2em;
+			mergin-top: .4em;
+		}
+	</style>
+</head>
+<body>
+	<script>
+	// alert("hi!");
+	// document.write("hi world!");
+	</script>
+	<h1> This is me, by jav </h1>
+	<!-- Let's test
+	<video width="640" height="480" autoplay controls>
+		<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+		Your browser doen not support the video tag.
+	</video>
+	-->
+	<video width="640" height="480" controls id="myvideo">
+		<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+	Your browser doen not support the video tag.
+	</video>
+	<script>
+	var elem = document.getElementById("myvideo");
+	if (elem.webkitRequestFullsscreen) {
+		elem.webkitRequestFullsscreen();
+	}
+	</script>
+	
+</body>
+</html>
