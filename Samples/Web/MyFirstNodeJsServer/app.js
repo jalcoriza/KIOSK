@@ -1,6 +1,11 @@
+// run the web server using:
+// $ node app.js
+
 const http = require('http');
 
-const hostname = '127.0.0.1';
+// Change th IP to be accesible from another machine at the local network
+//const hostname = '127.0.0.1';
+const hostname = '192.168.1.63';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
