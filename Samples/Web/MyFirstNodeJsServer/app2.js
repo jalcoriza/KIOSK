@@ -6,7 +6,7 @@ const http = require('http');
 // Change th IP to be accesible from another machine at the local network
 //const hostname = '127.0.0.1';
 const hostname = '192.168.1.63';
-const port = 3001;
+const port = 3002;
 
 var fs = require('fs');
 var index = fs.readFileSync('/home/jalcoriza/Projects/KIOSK/Samples/HTML/test.html');
@@ -14,7 +14,7 @@ var index = fs.readFileSync('/home/jalcoriza/Projects/KIOSK/Samples/HTML/test.ht
 
 const server = http.createServer((req, res) => {
 	  res.statusCode = 200;
-	  res.setHeader('Content-Type', 'text/plain');
+	  res.setHeader('Content-Type', 'text/html');
 	  res.end(index);
 });
 
