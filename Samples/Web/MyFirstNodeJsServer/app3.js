@@ -9,7 +9,7 @@ const hostname = '192.168.1.63';
 const port = 3003;
 
 var fs = require('fs');
-var index = fs.readFileSync('index.html');
+var index = fs.readFileSync('VideoTest.html');
 
 
 const server = http.createServer((req, res) => {
